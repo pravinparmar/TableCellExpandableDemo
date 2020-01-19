@@ -14,6 +14,7 @@
 		17E0933922B7FD1D0096C77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E0933722B7FD1D0096C77C /* LaunchScreen.storyboard */; };
 		17E0934322B7FE600096C77C /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E0934222B7FE600096C77C /* HeaderCell.swift */; };
 		17E0934522B7FE7C0096C77C /* CCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E0934422B7FE7C0096C77C /* CCell.swift */; };
+		17F8727D23D43E580005A28D /* SecondVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F8727C23D43E580005A28D /* SecondVC2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		17E0933A22B7FD1D0096C77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E0934222B7FE600096C77C /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		17E0934422B7FE7C0096C77C /* CCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCell.swift; sourceTree = "<group>"; };
+		17F8727A23D43E580005A28D /* TableCellExpandable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableCellExpandable-Bridging-Header.h"; sourceTree = "<group>"; };
+		17F8727B23D43E580005A28D /* SecondVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVC2.h; sourceTree = "<group>"; };
+		17F8727C23D43E580005A28D /* SecondVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVC2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,15 @@
 			children = (
 				17E0932E22B7FD1A0096C77C /* AppDelegate.swift */,
 				17E0933022B7FD1A0096C77C /* ViewController.swift */,
+				17F8727B23D43E580005A28D /* SecondVC2.h */,
+				17F8727C23D43E580005A28D /* SecondVC2.m */,
 				17E0934222B7FE600096C77C /* HeaderCell.swift */,
 				17E0934422B7FE7C0096C77C /* CCell.swift */,
 				17E0933222B7FD1A0096C77C /* Main.storyboard */,
 				17E0933522B7FD1D0096C77C /* Assets.xcassets */,
 				17E0933722B7FD1D0096C77C /* LaunchScreen.storyboard */,
 				17E0933A22B7FD1D0096C77C /* Info.plist */,
+				17F8727A23D43E580005A28D /* TableCellExpandable-Bridging-Header.h */,
 			);
 			path = TableCellExpandable;
 			sourceTree = "<group>";
@@ -102,6 +109,7 @@
 				TargetAttributes = {
 					17E0932A22B7FD190096C77C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -145,6 +153,7 @@
 				17E0934522B7FE7C0096C77C /* CCell.swift in Sources */,
 				17E0934322B7FE600096C77C /* HeaderCell.swift in Sources */,
 				17E0932F22B7FD1A0096C77C /* AppDelegate.swift in Sources */,
+				17F8727D23D43E580005A28D /* SecondVC2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableCellExpandable/Info.plist;
@@ -300,6 +310,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.parmar.TableCellExpandable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TableCellExpandable/TableCellExpandable-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableCellExpandable/Info.plist;
@@ -319,6 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.parmar.TableCellExpandable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TableCellExpandable/TableCellExpandable-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
